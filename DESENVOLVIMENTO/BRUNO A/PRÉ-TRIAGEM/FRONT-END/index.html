@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-Triagem</title>
+    <link rel="stylesheet" href="css/global.css"> <!-- Vincula o CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Pré-Triagem</h2>
+        
+        <form id="pretriage-form">
+            <!-- Dados básicos do paciente -->
+            <label for="name">Nome do Paciente:</label>
+            <input type="text" id="name" required />
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" required />
+
+            <!-- Temperatura corporal -->
+            <label for="temperature">Temperatura Corporal (°C):</label>
+            <input type="number" step="0.1" id="temperature" required />
+
+            <!-- Questionário de sintomas -->
+            <label for="symptoms">Descreva os Sintomas:</label>
+            <textarea id="symptoms" required></textarea>
+
+            <!-- Histórico de saúde -->
+            <label for="medical-history">Histórico de Saúde (condições preexistentes):</label>
+            <textarea id="medical-history" required></textarea>
+
+            <input type="submit" value="Enviar Pré-Triagem">
+        </form>
+    </div>
+
+    <script src="js/main.js"></script> <!-- Vincula o JS -->
+</body>
+</html>
