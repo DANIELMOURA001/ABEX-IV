@@ -1,0 +1,116 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://png.pngtree.com/background/20211217/original/pngtree-health-care-icon-grid-logo-picture-image_1591324.jpg');
+    background-size: cover; /* A imagem de fundo cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Define a altura da tela como 100% da janela */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo vertical e horizontalmente */
+}
+
+/* Centralizando o conteúdo e ajustando a aparência */
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(173, 216, 230, 0.9); /* Fundo azul claro com leve opacidade */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra leve para dar profundidade */
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+    color: blue; /* Verde para dar contraste com o fundo */
+    margin-bottom: 20px;
+}
+
+/* Formulário de agendamento */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea, select, input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+input[type="submit"], button {
+    padding: 12px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: darkblue;
+}
+
+/* Calendário e horários disponíveis */
+#calendar {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#available-times {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#available-times div {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#available-times div:hover {
+    background-color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"], textarea, select {
+        font-size: 14px;
+    }
+
+    input[type="submit"], button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="css/global.css"> <!-- Vincula o CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Agende sua Consulta</h2>
+        
+        <form id="appointment-form">
+            <label for="name">Nome do Paciente:</label>
+            <input type="text" id="name" required />
+
+            <label for="reason">Motivo da Consulta:</label>
+            <textarea id="reason" required></textarea>
+
+            <label for="appointment-type">Tipo de Exame/Consulta:</label>
+            <select id="appointment-type" required>
+                <option value="consulta">Consulta</option>
+                <option value="exame">Exame</option>
+            </select>
+
+            <!-- Input de data para o calendário -->
+            <label for="date">Selecione uma Data:</label>
+            <input type="date" id="date" required />
+
+            <div id="available-times"></div> <!-- Exibir horários disponíveis aqui -->
+
+            <input type="submit" value="Agendar">
+        </form>
+    </div>
+
+    <script src="js/main.js"></script> <!-- Vincula o JS -->
+</body>
+</html>
