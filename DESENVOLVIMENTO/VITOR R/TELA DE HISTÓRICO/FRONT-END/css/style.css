@@ -1,0 +1,79 @@
+/* Tornar o corpo da página ocupando toda a tela */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*height: 100vh;
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container para ajustar o conteúdo */
+.consulta-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajuste o tamanho da largura */
+    max-width: 800px;
+    text-align: center;
+    height: auto;
+}
+
+/* Tabela para preencher adequadamente */
+.consulta-table {
+    width: 100%; /* Tornar a tabela responsiva */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.consulta-table th, .consulta-table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.consulta-table th {
+    background-color: #00bfa6;
+    color: white;
+}
+
+.consulta-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Botão de voltar */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-container button {
+    background-color: #00bfa6;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+}
+
+.buttons-container button:hover {
+    background-color: #008d76;
+}
+
