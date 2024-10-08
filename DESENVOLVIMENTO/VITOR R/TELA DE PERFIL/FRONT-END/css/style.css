@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.profile-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.profile-container h2 {
+    color: #00bfa6;
+    margin-bottom: 10px;
+}
+
+.profile-field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.profile-field label {
+    display: block;
+    font-weight: bold;
+    color: #006d68;
+    margin-bottom: 5px;
+}
+
+.profile-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.profile-field input[disabled] {
+    background-color: #f0f0f0;
+}
+
+.profile-field input[type="password"] {
+    letter-spacing: 3px;
+}
+
+/* Ajuste para garantir que todos os botões tenham o mesmo tamanho e estejam alinhados */
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons-container button, 
+.buttons-container label {
+    background-color: #00bfa6;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.buttons-container button:hover, 
+.buttons-container label:hover {
+    background-color: #008d76;
+}
+
+/* Oculta o input de arquivo padrão */
+#upload {
+    display: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="https://via.placeholder.com/100" alt="Foto de Perfil" id="profilePic">
+        <h2>Perfil de Usuário</h2>
+
+        <div class="profile-field">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" value="100199157" disabled>
+        </div>
+
+        <div class="profile-field">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" value="Vitor Rodi" disabled>
+        </div>
+
+        <div class="profile-field">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" value="Rua Machado de Assis,746" disabled>
+        </div>
+
+        <div class="profile-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" value="Vitorrodi@example.com" disabled>
+        </div>
+
+        <div class="profile-field">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" value="senha123" disabled>
+        </div>
+
+        <!-- Botão de Upload de Foto -->
+        <input type="file" id="upload" accept="image/*" onchange="previewImage(event)">
+        <label for="upload">Carregar nova foto</label>
+
+        <div class="buttons-container">
+            <button class="edit-btn" onclick="toggleEdit()">Editar</button>
+            <button class="save-btn" onclick="saveChanges()" style="display:none;">Salvar</button>
+            <button class="reveal-btn" onclick="revelarSenha()">Revelar Senha</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
